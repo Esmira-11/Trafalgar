@@ -1,0 +1,21 @@
+.intro-section{
+    &-left{
+        &-button{
+            button{
+                @include btn-design();
+                text-align: left;
+            }
+        }
+    }
+}
+
+.services-section{
+    &-bottom{
+        @include content-design();
+        justify-content: center;
+        align-items: center;
+        button{
+            @include all-btn();
+        }
+    }
+}

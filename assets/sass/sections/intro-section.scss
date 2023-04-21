@@ -1,0 +1,27 @@
+.intro-section{
+    display: flex;
+    padding: 0 163px 192px 190px;
+    height: 90vh;
+    &-left{
+        @include content-design();
+        align-items: flex-start;
+        width: 40%;
+        &-title{
+            font-size: 48px;
+            font-weight: 700;
+        }
+        &-content{
+            font-size: 21px;
+            color: $content-color;
+            line-height: 1.5;
+            padding: 25px 0 48px;
+        }
+    }
+    &-right{
+        width: 60%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
