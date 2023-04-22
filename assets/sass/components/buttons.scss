@@ -53,3 +53,11 @@
         }
     }
 }
+
+.blogs-section{
+    &-bottom{
+        button{
+            @include all-btn();
+        }
+    }
+}

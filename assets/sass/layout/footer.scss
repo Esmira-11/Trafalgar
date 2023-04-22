@@ -1,5 +1,54 @@
-.container{
-    footer{
-        background-color: blueviolet;
+.footer{
+    box-sizing: border-box;
+    background:$footer-background;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 170px;
+    &-about{
+        width: 30%;
+        &-content{
+            font-size: $small-size-text;
+            line-height: 1.5;
+            padding: 17px 0 28px;
+            p{
+                font-weight: 300;
+                opacity: 0.8;
+            }
+           
+
+        }
+        &-end{
+            opacity: 0.8;
+            font-weight: 300;
+            font-size: 16px;
+        }
+    }
+    &-links{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 70%;
+        &-left,&-center,&-right{
+            p{
+                font-size:20px;
+                font-weight: 700;
+                padding-bottom: 10px;
+            }
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-weight: 300;
+                opacity: 0.8;
+                li{
+                    font-size:$small-size-text;
+                    padding: 10px 0;
+                }
+                .last-link{
+                    padding-bottom: 0;
+                }
+            }
+        }
     }
 }
