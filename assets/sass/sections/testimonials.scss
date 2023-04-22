@@ -1,0 +1,103 @@
+.testimonials-section{
+    @include content-design();
+    &-main{
+        @include content-design();
+        align-items: center;
+        background: $background-gradient;
+        border-radius: 24px;
+        padding: 0 118px;
+        &-top{
+            &-title{
+                text-align: center;
+                font-size: $title-size;
+                color: #fff;
+                font-weight: 700;
+                padding: 64px 0 25px;
+            }
+        }
+        .section-title-design{
+            @include title-design();
+            border: 1px solid #fff;
+         }
+        &-bottom{
+            padding-bottom: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 66px;
+            &-left{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                &-img{
+                    border-radius: 50%;
+                    border: 4px solid #fff;
+                    width: 141px;
+                    height: 141px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                    }
+                }
+                &-details{
+                    padding-left: 29px;
+                    h3{
+                        font-size: 22px;
+                        color: #fff;
+                        font-weight: 700;
+                        padding-bottom: 12px;
+                    }
+                    p{
+                        font-size: $small-size-text;
+                        color: rgba(255, 255, 255, 0.85);
+                    }
+                }
+            }
+            &-right{
+                width: 50%;
+                font-size: 19px;
+                line-height: 1.5;
+                text-align: justify;
+                color: rgba(255, 255, 255, 0.9);
+            }
+        }
+        
+    }
+
+    &-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 42px;
+        &-left{
+            img{
+                cursor: pointer;
+                opacity: 0.3;
+            }
+        }
+        &-right{
+            img{
+                cursor: pointer;
+            }
+        }
+        &-center{
+            display: flex;
+            justify-content: space-around;
+            padding: 0 90px;
+            .testimonials-section-button-center-ellipse{
+                cursor: pointer;
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                background-color: $main-color;
+                opacity: 0.3;
+                margin-left: 18px;
+            }
+            #active{
+                opacity: 1.0;
+                margin: 0;
+            }
+        }
+    }
+}

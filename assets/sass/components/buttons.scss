@@ -34,9 +34,10 @@
     &-left{
         &-button{
             button{
+                cursor: pointer;
                 padding: 0;
                 background-color: #fff;
-                border: 1px solid $main-color;
+                border: 1.4px solid $main-color;
                 color: $main-color;
                 font-size: $small-size-text;
                 border-radius: 55px;
