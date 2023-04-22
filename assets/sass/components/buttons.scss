@@ -19,3 +19,36 @@
         }
     }
 }
+
+.about-section{
+    &-right{
+        &-button{
+            button{
+                @include all-btn();
+            }
+        }
+    }
+}
+
+.download-section{
+    &-left{
+        &-button{
+            button{
+                padding: 0;
+                background-color: #fff;
+                border: 1px solid $main-color;
+                color: $main-color;
+                font-size: $small-size-text;
+                border-radius: 55px;
+                width: 200px;
+                height: 56px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

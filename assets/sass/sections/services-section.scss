@@ -1,6 +1,7 @@
 .services-section{
     @include content-design;
-    padding: 0 240px 221px;
+    padding-bottom: 120px;
+    // padding: 0 240px 221px;
     &-top{
         @include content-design;
         align-items: center;
