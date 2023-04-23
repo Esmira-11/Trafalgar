@@ -3,5 +3,12 @@
         // padding: 56px 163px 80px 190px;
         display: flex;
         justify-content: space-between;
+        &-right{
+            i{
+               font-size: 30px;
+                display: none;
+                cursor: pointer;
+            }
+        }
     }
 }
