@@ -5,7 +5,12 @@
                 @include btn-design();
                 text-align: left;
             }
+            button:hover{
+                @include all-btn();
+                transition: 0.5s ease;
+            }
         }
+        
     }
 }
 
@@ -17,6 +22,10 @@
         button{
             @include all-btn();
         }
+        button:hover{
+            @include btn-design();
+            transition: 0.5s ease;
+        }
     }
 }
 
@@ -25,6 +34,10 @@
         &-button{
             button{
                 @include all-btn();
+            }
+            button:hover{
+                @include btn-design();
+                transition: 0.5s ease;
             }
         }
     }
@@ -50,6 +63,17 @@
                     margin-left: 10px;
                 }
             }
+            button:hover{
+                @include btn-design();
+                transition: 0.5s ease;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                img{
+                    fill: #fff;
+                }
+            }
         }
     }
 }
@@ -58,6 +82,10 @@
     &-bottom{
         button{
             @include all-btn();
+        }
+        button:hover{
+            @include btn-design();
+            transition: 0.5s ease;
         }
     }
 }

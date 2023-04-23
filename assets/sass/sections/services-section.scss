@@ -1,8 +1,17 @@
 .services-section{
     @include content-design;
     padding-bottom: 120px;
+    z-index: 10;
     // padding: 0 240px 221px;
+    .design-service{
+        position:absolute;
+        left: 0;
+        top: 16%;
+        z-index: -10;
+        
+    }
     &-top{
+        z-index: 10px;
         @include content-design;
         align-items: center;
         &-title{
@@ -32,6 +41,7 @@
         .services-section-cards-top, .services-section-cards-bottom{
             display: flex;
             justify-content: space-around;
+            z-index: 10px;
             .services-section-card{
                 padding: 54px 37px;
                 box-sizing: border-box;

@@ -10,11 +10,12 @@
                     justify-content: space-around;
                     gap: 40px;
                     font-size: 18px;
-                    color: $nav-links;
-                    opacity: 0.5;
+                    .passive{
+                        color: $nav-links;
+                        opacity: 0.5;
+                    }
                     #active-link{
-                        color: #000;
-                        opacity: 1;
+                        color: #000; 
                         font-weight: 700;
                     }
                 }
